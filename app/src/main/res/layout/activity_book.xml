@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/TitleBarBgColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="广东东软学院还书系统"
+        android:textSize="25dp"
+        android:textColor="@color/TitleBarBgColor"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="请输入您的卡号  "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/et_bankpassword"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:text="确定"
+        android:textColor="@color/TitleTextBgColor"
+        android:background="@drawable/bt_transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+
+    <com.example.ljh.faceln.AutoFitTextureView
+        android:id="@+id/textureViewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
